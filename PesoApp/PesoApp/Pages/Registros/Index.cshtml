@@ -1,6 +1,7 @@
 ﻿@page
 @model PesoApp.Pages.Registros.IndexModel
 @{
+    ViewData["Title"] = "Lista de registros";
 }
 <div class="container">
     <div class="row">
@@ -23,6 +24,7 @@
                         <th>@Html.DisplayNameFor(m => m.Registros.FirstOrDefault().Peso)</th>
                         <th>@Html.DisplayNameFor(m => m.Registros.FirstOrDefault().Cintura)</th>
                         <th>@Html.DisplayNameFor(m => m.Registros.FirstOrDefault().Cadera)</th>
+                        <th>@Html.DisplayNameFor(m => m.Registros.FirstOrDefault().Pierna)</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -35,6 +37,7 @@
                         <td>@Html.DisplayFor(m => registro.Peso)</td>
                         <td>@Html.DisplayFor(m => registro.Cintura)</td>
                         <td>@Html.DisplayFor(m => registro.Cadera)</td>
+                        <td>@Html.DisplayFor(m => registro.Pierna)</td>
                         <td>
                             <a class="btn btn-success" asp-page="../Registros/Detalle" asp-route-id="@registro.Id">Detalle</a>
                             <a class="btn btn-warning" asp-page="../Registros/Editar" asp-route-id="@registro.Id">Editar</a>

@@ -15,11 +15,13 @@ namespace PesoApp.Modelos
         [Display(Name = "Fecha de creación")]
         public DateTime FechaIngreso { get; set; }
         [Required(ErrorMessage = "El peso es obligatorio")]
-        public float Peso { get; set; }
+        public double Peso { get; set; }
         [Required(ErrorMessage = "La cintura es obligatorio")]
-        public float Cintura { get; set; }
+        public double Cintura { get; set; }
         [Required(ErrorMessage = "La cadera es obligatorio")]
-        public float Cadera { get; set; }
+        public double Cadera { get; set; }
 
+        [Required(ErrorMessage = "La medida de la pierna es obligatorio")]
+        public double Pierna { get; set; }
     }
 }

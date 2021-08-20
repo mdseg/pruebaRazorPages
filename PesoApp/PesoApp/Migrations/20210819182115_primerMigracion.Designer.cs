@@ -10,8 +10,8 @@ using PesoApp.Datos;
 namespace PesoApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210819143809_primerMigracionApp")]
-    partial class primerMigracionApp
+    [Migration("20210819182115_primerMigracion")]
+    partial class primerMigracion
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -28,17 +28,20 @@ namespace PesoApp.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<float>("Cadera")
-                        .HasColumnType("real");
+                    b.Property<double>("Cadera")
+                        .HasColumnType("float");
 
-                    b.Property<float>("Cintura")
-                        .HasColumnType("real");
+                    b.Property<double>("Cintura")
+                        .HasColumnType("float");
 
                     b.Property<DateTime>("FechaIngreso")
                         .HasColumnType("datetime2");
 
-                    b.Property<float>("Peso")
-                        .HasColumnType("real");
+                    b.Property<double>("Peso")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Pierna")
+                        .HasColumnType("float");
 
                     b.HasKey("Id");
 

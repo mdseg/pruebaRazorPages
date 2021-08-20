@@ -1,0 +1,55 @@
+﻿@page
+@model PesoApp.Pages.Registros.CrearModel
+@{
+    ViewData["Title"] = "Crear una Registro";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2">
+            <div class="text-info">Crear una Nueva Registro</div>
+            <form method="POST">
+
+
+
+                <div class="mb-3">
+                    <label asp-for="Registro.FechaIngreso" class="form-label"></label>
+                    <input asp-for="Registro.FechaIngreso" class="form-control" />
+                    <span asp-validation-for="Registro.FechaIngreso" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Registro.Peso" class="form-label"></label>
+                    <input asp-for="Registro.Peso" type="number" step="0.01" min="0" class="form-control" />
+                    <span asp-validation-for="Registro.Peso" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Registro.Cintura" class="form-label"></label>
+                    <input asp-for="Registro.Cintura" type="number" class="form-control" />
+                    <span asp-validation-for="Registro.Cintura" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Registro.Cadera" class="form-label"></label>
+                    <input asp-for="Registro.Cadera" type="number" class="form-control" />
+                    <span asp-validation-for="Registro.Cadera" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Registro.Pierna" class="form-label"></label>
+                    <input asp-for="Registro.Pierna" type="number" class="form-control" />
+                    <span asp-validation-for="Registro.Pierna" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn-primary btn-primary">Modificar Registro</button>
+            </form>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <a asp-page="Index" class="btn btn-success">Volver</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}
