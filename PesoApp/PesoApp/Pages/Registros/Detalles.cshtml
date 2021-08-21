@@ -2,3 +2,24 @@
 @model PesoApp.Pages.Registros.DetallesModel
 @{
 }
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2">
+            <h2 class="text-info">Detalles de un Registro</h2>
+            <h2 class="text-info">Detalle de Registro: @Html.DisplayFor(m => m.Registro.Id)</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Id: @Html.DisplayFor(m => m.Registro.Id)</li>
+                <li class="list-group-item">Fecha de creación: @Html.DisplayFor(m => m.Registro.FechaIngreso)</li>
+                <li class="list-group-item">Peso: @Html.DisplayFor(m => m.Registro.Peso)</li>
+                <li class="list-group-item">Cadera: @Html.DisplayFor(m => m.Registro.Cadera)</li>
+                <li class="list-group-item">Cintura: @Html.DisplayFor(m => m.Registro.Cintura)</li>
+                <li class="list-group-item">Pierna: @Html.DisplayFor(m => m.Registro.Pierna)</li>
+            </ul>
+        </div>      
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <a asp-page="Index" class="btn btn-success">Volver</a>
+        </div>
+    </div>
+</div>

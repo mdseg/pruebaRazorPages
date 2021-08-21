@@ -39,9 +39,9 @@
                         <td>@Html.DisplayFor(m => registro.Cadera)</td>
                         <td>@Html.DisplayFor(m => registro.Pierna)</td>
                         <td>
-                            <a class="btn btn-success" asp-page="../Registros/Detalle" asp-route-id="@registro.Id">Detalle</a>
+                            <a class="btn btn-success" asp-page="../Registros/Detalles" asp-route-id="@registro.Id">Detalle</a>
                             <a class="btn btn-warning" asp-page="../Registros/Editar" asp-route-id="@registro.Id">Editar</a>
-                            <a class="btn btn-danger" asp-page="../Registos/Borrar" asp-route-id="@registro.Id">Borrar</a>
+                            <a class="btn btn-danger" asp-page="../Registros/Borrar" asp-route-id="@registro.Id">Borrar</a>
                         </td>
                     </tr>
                     }

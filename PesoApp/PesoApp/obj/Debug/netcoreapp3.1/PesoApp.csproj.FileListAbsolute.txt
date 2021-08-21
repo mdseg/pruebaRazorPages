@@ -768,3 +768,5 @@ C:\Users\Usuario-PC\source\repos\Peso\PesoApp\PesoApp\obj\Debug\netcoreapp3.1\Pe
 C:\Users\Usuario-PC\source\repos\Peso\PesoApp\PesoApp\obj\Debug\netcoreapp3.1\PesoApp.pdb
 C:\Users\Usuario-PC\source\repos\Peso\PesoApp\PesoApp\obj\Debug\netcoreapp3.1\PesoApp.genruntimeconfig.cache
 C:\Users\Usuario-PC\source\repos\Peso\PesoApp\PesoApp\obj\Debug\netcoreapp3.1\Razor\Pages\Registros\Editar.cshtml.g.cs
+C:\Users\Usuario-PC\source\repos\Peso\PesoApp\PesoApp\obj\Debug\netcoreapp3.1\Razor\Pages\Registros\Detalles.cshtml.g.cs
+C:\Users\Usuario-PC\source\repos\Peso\PesoApp\PesoApp\obj\Debug\netcoreapp3.1\Razor\Pages\Registros\Borrar.cshtml.g.cs
